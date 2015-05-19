@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F081A861B06698100C873EA /* gigDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F081A851B06698100C873EA /* gigDisplayViewController.m */; };
+		3F3648AB1B050B2100D82CBC /* AddGig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648AA1B050B2100D82CBC /* AddGig.m */; };
+		3F3648AE1B050C0A00D82CBC /* GigismTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648AD1B050C0A00D82CBC /* GigismTableViewController.m */; };
+		3F3648B11B050DE900D82CBC /* GigItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648B01B050DE900D82CBC /* GigItem.m */; };
 		3FFBFA831AF2A2B500473C6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA821AF2A2B500473C6C /* main.m */; };
 		3FFBFA861AF2A2B500473C6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA851AF2A2B500473C6C /* AppDelegate.m */; };
 		3FFBFA891AF2A2B500473C6C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA881AF2A2B500473C6C /* FirstViewController.m */; };
@@ -28,6 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F081A841B06698100C873EA /* gigDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gigDisplayViewController.h; sourceTree = "<group>"; };
+		3F081A851B06698100C873EA /* gigDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gigDisplayViewController.m; sourceTree = "<group>"; };
+		3F3648A91B050B2100D82CBC /* AddGig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGig.h; sourceTree = "<group>"; };
+		3F3648AA1B050B2100D82CBC /* AddGig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGig.m; sourceTree = "<group>"; };
+		3F3648AC1B050C0A00D82CBC /* GigismTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GigismTableViewController.h; sourceTree = "<group>"; };
+		3F3648AD1B050C0A00D82CBC /* GigismTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GigismTableViewController.m; sourceTree = "<group>"; };
+		3F3648AF1B050DE900D82CBC /* GigItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GigItem.h; sourceTree = "<group>"; };
+		3F3648B01B050DE900D82CBC /* GigItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GigItem.m; sourceTree = "<group>"; };
 		3FFBFA7D1AF2A2B500473C6C /* Gigism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFBFA811AF2A2B500473C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FFBFA821AF2A2B500473C6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +78,8 @@
 		3FFBFA741AF2A2B500473C6C = {
 			isa = PBXGroup;
 			children = (
+				3F3648A91B050B2100D82CBC /* AddGig.h */,
+				3F3648AA1B050B2100D82CBC /* AddGig.m */,
 				3FFBFA7F1AF2A2B500473C6C /* Gigism */,
 				3FFBFA9C1AF2A2B500473C6C /* GigismTests */,
 				3FFBFA7E1AF2A2B500473C6C /* Products */,
@@ -91,6 +105,12 @@
 				3FFBFA8A1AF2A2B500473C6C /* SecondViewController.h */,
 				3FFBFA8B1AF2A2B500473C6C /* SecondViewController.m */,
 				3FFBFA8D1AF2A2B500473C6C /* Main.storyboard */,
+				3F081A841B06698100C873EA /* gigDisplayViewController.h */,
+				3F081A851B06698100C873EA /* gigDisplayViewController.m */,
+				3F3648AF1B050DE900D82CBC /* GigItem.h */,
+				3F3648B01B050DE900D82CBC /* GigItem.m */,
+				3F3648AC1B050C0A00D82CBC /* GigismTableViewController.h */,
+				3F3648AD1B050C0A00D82CBC /* GigismTableViewController.m */,
 				3FFBFA901AF2A2B500473C6C /* Images.xcassets */,
 				3FFBFA921AF2A2B500473C6C /* LaunchScreen.xib */,
 				3FFBFA801AF2A2B500473C6C /* Supporting Files */,
@@ -224,8 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3648AB1B050B2100D82CBC /* AddGig.m in Sources */,
+				3F081A861B06698100C873EA /* gigDisplayViewController.m in Sources */,
+				3F3648AE1B050C0A00D82CBC /* GigismTableViewController.m in Sources */,
 				3FFBFA8C1AF2A2B500473C6C /* SecondViewController.m in Sources */,
 				3FFBFA861AF2A2B500473C6C /* AppDelegate.m in Sources */,
+				3F3648B11B050DE900D82CBC /* GigItem.m in Sources */,
 				3FFBFA891AF2A2B500473C6C /* FirstViewController.m in Sources */,
 				3FFBFA831AF2A2B500473C6C /* main.m in Sources */,
 			);
@@ -418,6 +442,7 @@
 				3FFBFAA51AF2A2B500473C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FFBFAA61AF2A2B500473C6C /* Build configuration list for PBXNativeTarget "GigismTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +451,7 @@
 				3FFBFAA81AF2A2B500473C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

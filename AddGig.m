@@ -7,27 +7,16 @@
 //
 
 #import "AddGig.h"
+#import "gigDisplayViewController.h"
 
 @interface AddGig ()
-
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
-@property (weak, nonatomic) IBOutlet UITextField *eventName;
-@property (weak, nonatomic) IBOutlet UITextField *artist1;
-@property (weak, nonatomic) IBOutlet UITextField *artist2;
-@property (weak, nonatomic) IBOutlet UITextField *artist3;
-@property (weak, nonatomic) IBOutlet UITextField *artist4;
-@property (weak, nonatomic) IBOutlet UITextField *guests;
-@property (weak, nonatomic) IBOutlet UITextField *location;
-@property (weak, nonatomic) IBOutlet UITextField *venue;
-@property (weak, nonatomic) IBOutlet UITextField *month;
-@property (weak, nonatomic) IBOutlet UITextField *day;
-@property (weak, nonatomic) IBOutlet UITextField *year;
 
 @end
 
 @implementation AddGig
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -61,9 +50,6 @@
     // add the user entered text from the text field to the array created above
     [myArray addObject:_eventName.text];
     [myArray addObject:_artist1.text];
-    [myArray addObject:_artist2.text];
-    [myArray addObject:_artist3.text];
-    [myArray addObject:_artist4.text];
     [myArray addObject:_guests.text];
     [myArray addObject:_location.text];
     [myArray addObject:_venue.text];
@@ -89,5 +75,7 @@
     // return the path to the myPlist
     return dataFilePath;
 }
+
+
 
 @end

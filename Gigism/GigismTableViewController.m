@@ -9,6 +9,7 @@
 #import "GigismTableViewController.h"
 #import "GigItem.h"
 #import "AddGig.h"
+#import "gigDisplayViewController.h"
 
 @interface GigismTableViewController ()
 
@@ -29,8 +30,6 @@
     GigItem *item3 = [[GigItem alloc] init];
     item3.itemName = @"From Indian Lakes";
     [self.gigItems addObject:item3];
- 
- 
 
  
 }
@@ -56,8 +55,6 @@
     /*
     [self loadInitialData];
      */
-     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gigismbg"]];
-     [self.view addSubview:backgroundView];
      
 }
 
@@ -125,14 +122,49 @@
 }
 */
 
-/*
+-(NSString *) filePath
+{
+    // NSArray that will hold the path to the documents directory
+    NSArray *pathToPlist = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    // an NSString that holds the path to the plist file using the directory found above
+    NSString *documentsdir = pathToPlist[0];
+    
+    // build the path to the data file by appending the name of the archiving file
+    NSString *dataFilePath = [[NSString alloc] initWithString:[documentsdir stringByAppendingPathComponent:@"myFile.archive"]];
+    
+    // return the path to the myPlist
+    return dataFilePath;
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+            gigDisplayViewController *gdvc = [[gigDisplayViewController alloc] init];
+            AddGig *agvc = [[AddGig alloc] init];
+    
+    
+            gdvc.eventNameLabel.text = agvc.eventName.text;
+            gdvc.monthLabel.text = agvc.month.text;
+            gdvc.dayLabel.text = agvc.day.text;
+            gdvc.yearLabel.text = agvc.year.text;
+            gdvc.artistsLabel.text = agvc.artist1.text;
+            gdvc.locationLabel.text = agvc.location.text;
+            gdvc.venueLabel.text = agvc.venue.text;
+            gdvc.friendsLabel.text = agvc.guests.text;
+    
+    
+    // Get reference to the destination view controller
+    gdvc = [segue destinationViewController];
+
+
 }
-*/
 
 @end

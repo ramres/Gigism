@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "gigDisplayViewController.h"
 
 @interface GigismTableViewController : UITableViewController
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 
+-(NSString *) filePath;
 
 
 @end

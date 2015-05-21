@@ -106,7 +106,7 @@
     NSString *documentsdir = pathToPlist[0];
     
     // build the path to the data file by appending the name of the archiving file
-    NSString *dataFilePath = [[NSString alloc] initWithString:[documentsdir stringByAppendingPathComponent:@"myFile.archive"]];
+    NSString *dataFilePath = [[NSString alloc] initWithString:[documentsdir stringByAppendingPathComponent:@"gigPlist.archive"]];
     
     // return the path to the myPlist
     return dataFilePath;

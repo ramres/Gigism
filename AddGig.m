@@ -86,11 +86,25 @@
     // create a NSMutable dictionary that will hold the plist values
     NSMutableDictionary *myPlistDict = [[NSMutableDictionary alloc]init];
     
-    // create a NSArray that will hold the contents of the text field
-    NSArray *values = [NSArray arrayWithObjects: _eventName.text, _artist1.text, _guests.text, _location.text, _venue.text, _month.text, _day.text, _year.text, nil];
+    // create NSStrings that will hold the contents of the text fields
+    NSString *eventValue = _eventName.text;
+    NSString *artistValue = _artist1.text;
+    NSString *guestValue = _guests.text;
+    NSString *locationValue = _location.text;
+    NSString *venueValue = _venue.text;
+    NSString *monthValue = _month.text;
+    NSString *dayValue = _day.text;
+    NSString *yearValue = _year.text;
     
     // set the plist to the NSString that is holding the contents to the plist
-    [myPlistDict setValue:values forKey:@"Name"];
+    [myPlistDict setValue:eventValue forKey:@"Name"];
+    [myPlistDict setValue:artistValue forKey:@"Artists"];
+    [myPlistDict setValue:guestValue forKey:@"Guests"];
+    [myPlistDict setValue:locationValue forKey:@"Location"];
+    [myPlistDict setValue:venueValue forKey:@"Venue"];
+    [myPlistDict setValue:monthValue forKey:@"Month"];
+    [myPlistDict setValue:dayValue forKey:@"Day"];
+    [myPlistDict setValue:yearValue forKey:@"Year"];
     
     // invoke the writeToFile method to write the contents to the plist
     [myPlistDict writeToFile:[self filePath] atomically:YES];

@@ -54,8 +54,20 @@
     self.gigItems = [[NSMutableArray alloc] init];
     /*
     [self loadInitialData];
-     */
-     
+
+    
+    gigDisplayViewController *gdvc = [[gigDisplayViewController alloc] init];
+    AddGig *agvc = [[AddGig alloc] init];
+    
+    gdvc.eventNameLabel.text = agvc.eventName.text;
+    gdvc.monthLabel.text = agvc.month.text;
+    gdvc.dayLabel.text = agvc.day.text;
+    gdvc.yearLabel.text = agvc.year.text;
+    gdvc.artistsLabel.text = agvc.artist1.text;
+    gdvc.locationLabel.text = agvc.location.text;
+    gdvc.venueLabel.text = agvc.venue.text;
+    gdvc.friendsLabel.text = agvc.guests.text;
+    */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -122,6 +134,7 @@
 }
 */
 
+/*
 -(NSString *) filePath
 {
     // NSArray that will hold the path to the documents directory
@@ -136,35 +149,28 @@
     // return the path to the myPlist
     return dataFilePath;
 }
+ */
 
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-            gigDisplayViewController *gdvc = [[gigDisplayViewController alloc] init];
-            AddGig *agvc = [[AddGig alloc] init];
+    if ([[segue identifier]isEqualToString:@"toGigDisplay"])
+    {
+        gigDisplayViewController *gdvc = [[gigDisplayViewController alloc] init];
     
-    
-            gdvc.eventNameLabel.text = agvc.eventName.text;
-            gdvc.monthLabel.text = agvc.month.text;
-            gdvc.dayLabel.text = agvc.day.text;
-            gdvc.yearLabel.text = agvc.year.text;
-            gdvc.artistsLabel.text = agvc.artist1.text;
-            gdvc.locationLabel.text = agvc.location.text;
-            gdvc.venueLabel.text = agvc.venue.text;
-            gdvc.friendsLabel.text = agvc.guests.text;
-    
-    
-    // Get reference to the destination view controller
-    gdvc = [segue destinationViewController];
-
+        // Get reference to the destination view controller
+        gdvc = [segue destinationViewController];
+    }
 
 }
+ */
 
 @end

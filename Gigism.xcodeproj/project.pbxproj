@@ -11,10 +11,9 @@
 		3F3648AB1B050B2100D82CBC /* AddGig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648AA1B050B2100D82CBC /* AddGig.m */; };
 		3F3648AE1B050C0A00D82CBC /* GigismTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648AD1B050C0A00D82CBC /* GigismTableViewController.m */; };
 		3F3648B11B050DE900D82CBC /* GigItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648B01B050DE900D82CBC /* GigItem.m */; };
+		3FBF9EE51B0E415B0095DBE4 /* gigPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF9EE41B0E415B0095DBE4 /* gigPlist.plist */; };
 		3FFBFA831AF2A2B500473C6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA821AF2A2B500473C6C /* main.m */; };
 		3FFBFA861AF2A2B500473C6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA851AF2A2B500473C6C /* AppDelegate.m */; };
-		3FFBFA891AF2A2B500473C6C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA881AF2A2B500473C6C /* FirstViewController.m */; };
-		3FFBFA8C1AF2A2B500473C6C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFA8B1AF2A2B500473C6C /* SecondViewController.m */; };
 		3FFBFA8F1AF2A2B500473C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBFA8D1AF2A2B500473C6C /* Main.storyboard */; };
 		3FFBFA911AF2A2B500473C6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBFA901AF2A2B500473C6C /* Images.xcassets */; };
 		3FFBFA941AF2A2B500473C6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBFA921AF2A2B500473C6C /* LaunchScreen.xib */; };
@@ -40,15 +39,12 @@
 		3F3648AD1B050C0A00D82CBC /* GigismTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GigismTableViewController.m; sourceTree = "<group>"; };
 		3F3648AF1B050DE900D82CBC /* GigItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GigItem.h; sourceTree = "<group>"; };
 		3F3648B01B050DE900D82CBC /* GigItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GigItem.m; sourceTree = "<group>"; };
+		3FBF9EE41B0E415B0095DBE4 /* gigPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gigPlist.plist; sourceTree = "<group>"; };
 		3FFBFA7D1AF2A2B500473C6C /* Gigism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFBFA811AF2A2B500473C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FFBFA821AF2A2B500473C6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3FFBFA841AF2A2B500473C6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FFBFA851AF2A2B500473C6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FFBFA871AF2A2B500473C6C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		3FFBFA881AF2A2B500473C6C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		3FFBFA8A1AF2A2B500473C6C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		3FFBFA8B1AF2A2B500473C6C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		3FFBFA8E1AF2A2B500473C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FFBFA901AF2A2B500473C6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3FFBFA931AF2A2B500473C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -100,10 +96,6 @@
 			children = (
 				3FFBFA841AF2A2B500473C6C /* AppDelegate.h */,
 				3FFBFA851AF2A2B500473C6C /* AppDelegate.m */,
-				3FFBFA871AF2A2B500473C6C /* FirstViewController.h */,
-				3FFBFA881AF2A2B500473C6C /* FirstViewController.m */,
-				3FFBFA8A1AF2A2B500473C6C /* SecondViewController.h */,
-				3FFBFA8B1AF2A2B500473C6C /* SecondViewController.m */,
 				3FFBFA8D1AF2A2B500473C6C /* Main.storyboard */,
 				3F081A841B06698100C873EA /* gigDisplayViewController.h */,
 				3F081A851B06698100C873EA /* gigDisplayViewController.m */,
@@ -123,6 +115,7 @@
 			children = (
 				3FFBFA811AF2A2B500473C6C /* Info.plist */,
 				3FFBFA821AF2A2B500473C6C /* main.m */,
+				3FBF9EE41B0E415B0095DBE4 /* gigPlist.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -227,6 +220,7 @@
 				3FFBFA8F1AF2A2B500473C6C /* Main.storyboard in Resources */,
 				3FFBFA941AF2A2B500473C6C /* LaunchScreen.xib in Resources */,
 				3FFBFA911AF2A2B500473C6C /* Images.xcassets in Resources */,
+				3FBF9EE51B0E415B0095DBE4 /* gigPlist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +241,8 @@
 				3F3648AB1B050B2100D82CBC /* AddGig.m in Sources */,
 				3F081A861B06698100C873EA /* gigDisplayViewController.m in Sources */,
 				3F3648AE1B050C0A00D82CBC /* GigismTableViewController.m in Sources */,
-				3FFBFA8C1AF2A2B500473C6C /* SecondViewController.m in Sources */,
 				3FFBFA861AF2A2B500473C6C /* AppDelegate.m in Sources */,
 				3F3648B11B050DE900D82CBC /* GigItem.m in Sources */,
-				3FFBFA891AF2A2B500473C6C /* FirstViewController.m in Sources */,
 				3FFBFA831AF2A2B500473C6C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,5 +23,6 @@
 -(IBAction) close:(id) sender;
 
 -(NSString *) filePath;
+- (void) readFromPlist;
 
 @end

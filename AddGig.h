@@ -25,5 +25,6 @@
 
 - (IBAction)saveButton:(id)sender;
 - (NSString *) filePath;
+- (void) writeToPlist;
 
 @end

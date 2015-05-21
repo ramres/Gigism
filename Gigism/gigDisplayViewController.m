@@ -29,6 +29,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // invoke the readFromPlist method to read the contents of the plist into the label
+    [self readFromPlist];
+    
+    /*
+    
     // get the path to the file by invoking the filePath method
     NSString * pathToFile = [self filePath];
     
@@ -52,6 +57,7 @@
         _venueLabel.text = myArray[6];
         _friendsLabel.text = myArray[7];
     }
+     */
     
 }
 
@@ -71,6 +77,23 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
+}
+
+-(void) readFromPlist
+{
+    // create a NSString that will hold the path to the file by invoking the filePath method
+    NSString *pathToFile = [self filePath];
+    
+    // test to see of the plist already exists
+    if([[NSFileManager defaultManager]fileExistsAtPath:pathToFile])
+    {
+        // create a NSMutable dictionary set to the path to the plist to hold the contents of the plist
+        NSMutableDictionary *myPlistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:pathToFile];
+        
+        // set the label to the contents of the plist at the Name key
+        gigDisplayViewController *gdvc = [[gigDisplayViewController alloc] init];
+        [gdvc.eventNameLabel setText:[myPlistDict objectForKey:@"Name"]];
+    }
 }
 
 

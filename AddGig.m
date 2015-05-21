@@ -44,6 +44,7 @@
 
 - (IBAction)saveButton:(id)sender
 {
+    /*
     // create an NSMutableArray to hold the data
     NSMutableArray *myArray = [[NSMutableArray alloc] init];
     
@@ -59,6 +60,10 @@
      
     // archiving the array
     [NSKeyedArchiver archiveRootObject:myArray toFile:[self filePath]];
+     */
+    
+    // invoke the writeToPlist method to write the contents of the field to the plist
+    [self writeToPlist];
 }
 
 -(NSString *) filePath
@@ -70,10 +75,30 @@
     NSString *documentsdir = pathToPlist[0];
     
     // build the path to the data file by appending the name of the archiving file
-    NSString *dataFilePath = [[NSString alloc] initWithString:[documentsdir stringByAppendingPathComponent:@"myFile.archive"]];
+    NSString *dataFilePath = [[NSString alloc] initWithString:[documentsdir stringByAppendingPathComponent:@"gigPlist.archive"]];
     
     // return the path to the myPlist
     return dataFilePath;
+}
+
+- (void) writeToPlist
+{
+    // create a NSMUtable dictionary that will hold the plist values
+    NSMutableDictionary *myPlistDict = [[NSMutableDictionary alloc]init];
+    
+    // create a NString that will hold the contents of the text field
+    NSString *value = _eventName.text;
+    
+    // set the plist to the NSString that is holding the contents to the plist
+    [myPlistDict setValue:value forKey:@"Name"];
+    
+    // invoke the writeToFile method to write the contents to the plist
+    [myPlistDict writeToFile:[self filePath] atomically:YES];
+    
+    // set the label to the contents of the text field for the user to see what is being written
+    gigDisplayViewController *gdvc = [[gigDisplayViewController alloc] init];
+    [gdvc.eventNameLabel setText:_eventName.text];
+    
 }
 
 
